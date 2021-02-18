@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color:#BAC639;
+    --secondary--color:#8A5D3B;
+    --color:#222;
+    --bg-color:#FFF;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color);
+    font-size: .75em;
+    font-weight: 300;
+    background: var(--bg-color);
+}
+/* utilities */
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.btn{
+    border: none;
+    padding: .2em 1em;
+    background-color:var(--primary-color);
+    font-size: .75em;
+    color: white;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    max-width:800px;
+    margin: 0 auto;
+    padding: 0 2em;
+  }
+/* HOME PAGE HEADER SECTION */
+header{
+    margin-bottom: .5em;
+}
+header .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.donners{
+    text-align: right;
+    padding: 1em 0;
+    }
+ nav ul li{
+    position: relative;
+    display: inline-block;
+   
+    
+}
+nav ul li a{
+    display: block;
+    padding: .5em .8em;
+    color: var(--secondary--color);
+    font-weight: 500;
+   font-size: 1.2em;
+}
+nav ul li a:hover{
+    /* background-color:var(--bg-color); */
+   
+}
+nav ul ul{
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    display: list-item;
+    position: relative;
+}
+
+/* HOME PAGE HERO SECTION */
+.hero{
+    padding: 1em 0;
+    margin: 1em 0;
+    height: 80vh;
+    background-image: url(../img/hero_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+/* WELCOME SECTION */
+.welcome{
+    padding: 5em 0;
+}
+.welcome__grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+}
+.welcome__text{
+    padding:0 2em;
+}
+
+.welcome__text p{
+    line-height: 1.5;
+    font-family: 1.2em;
+}
+.welcome__image{
+    border-right: 10px solid var(--primary-color);
+    border-bottom: 10px solid var(--primary-color);
+}
+.heading{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.heading::after{
+    content: '';
+    height: 20px;
+    background: coral;
+    position: absolute;
+    top: 10px;
+}
