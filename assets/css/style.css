@@ -13,8 +13,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: var(--color);
-    font-size: .75em;
+    font-size: .8em;
     font-weight: 300;
+    line-height: 18px;
     /* background: var(--bg-color); */
     /* color-scheme:dark; */
 }
@@ -27,10 +28,11 @@ li{
 }
 .btn{
     border: none;
-    padding: 1em 2em;
+    padding: .5em 1.2em;
     background-color:var(--primary-color);
-    font-size: .75em;
     color: white;
+    font-size: .75em;
+    font-weight: 500;
 }
 img{
     width: 100%;
@@ -39,7 +41,7 @@ img{
 .container{
     max-width:1100px;
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 4em;
   }
 /* HOME PAGE HEADER SECTION */
 header .navigation{
@@ -68,6 +70,9 @@ nav ul li a{
     background-color:var(--primary-color);
     color: white;
    
+}
+.menu-item{
+    font-size: .75em;
 }
 .sub-menu{
     color: white;
@@ -102,11 +107,13 @@ nav ul ul li a{
     background-color:var(--primary-color);
     color: white; 
     font-weight: 500; 
+    font-size: .75em;
 }
 /* HOME PAGE HERO SECTION */
 .hero{
     height: 80vh;
-    background-image: url(../img/hero_bg.jpg);
+    background-image: url(../img/hero_bg.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,6 +131,11 @@ nav ul ul li a{
 }
 .hero__title{
     color: white;
+    font-size: 2.2em;
+    padding: .75em 0;
+}
+.title-span{
+    color: var(--primary-color);
 }
 .hero__text{
     color: white;
@@ -140,19 +152,49 @@ nav ul ul li a{
     display:grid;
     grid-template-columns:2fr 1fr;
 }
-.welcome__text{
-    padding:0 2em;
-}
 
 .welcome__text p{
     line-height: 1.5;
     font-family: 1.2em;
 }
 .welcome__image{
-    border-right: 10px solid var(--primary-color);
-    border-bottom: 10px solid var(--primary-color);
+    border-right: 10px solid var(--secondary--color);
+    border-bottom: 10px solid var(--secondary--color);
 }
 .heading{
     font-size: 1.5em;
     margin-bottom: 1em;
 }
+
+/* OUR PROGRAMS */
+
+.services-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 2em;
+}
+.card-content{
+    padding:0 2em;
+}
+.service-title{
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+.card-title{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+.card-secription{
+    margin-bottom: 2em;
+}
+.card-btn{
+    padding: .5em 1em;
+    background-color: var(--primary-color);
+    font-size: .75em;
+    color: white;
+    font-weight: 400;
+}
+.card-img{
+    border-bottom: 10px solid var(--secondary--color);
+}
+/*  */
