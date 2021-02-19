@@ -15,7 +15,8 @@ body{
     color: var(--color);
     font-size: .75em;
     font-weight: 300;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+    /* color-scheme:dark; */
 }
 /* utilities */
 a{
@@ -26,7 +27,7 @@ li{
 }
 .btn{
     border: none;
-    padding: .2em 1em;
+    padding: 1em 2em;
     background-color:var(--primary-color);
     font-size: .75em;
     color: white;
@@ -41,18 +42,14 @@ img{
     padding: 0 2em;
   }
 /* HOME PAGE HEADER SECTION */
-header{
-    margin-bottom: .5em;
-}
 header .navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
-.donners{
-    text-align: right;
-    padding: 1em 0;
-    }
+}
+nav{
+    font-size: 1em;
+}
  nav ul li{
     position: relative;
     display: inline-block;
@@ -61,32 +58,52 @@ header .navigation{
 }
 nav ul li a{
     display: block;
-    padding: .5em .8em;
+    padding: .5em 1em;
     color: var(--secondary--color);
     font-weight: 500;
-   font-size: 1.2em;
-}
-nav ul li a:hover{
-    /* background-color:var(--bg-color); */
    
 }
+.sub-menu a:hover, .menu-item a:hover{
+    background-color:var(--primary-color);
+    color: white;
+   
+}
+.sub-menu{
+    color: white;
+}
+.menu-item-sub:hover{
+    background-color:var(--primary-color);
+    color: white;   
+}
+/* a.active{
+    border-bottom: 2px solid var(--primary-color);
+} */
 nav ul ul{
     position: absolute;
-    top: 10px;
+    top: 25px;
     width: 200px;
     display: none;
 }
 nav ul li:hover > ul{
     display: block;
+    background-color:var(--primary-color);
+    color: white;
 }
 nav ul ul li{
     display: list-item;
     position: relative;
+   
 }
-
+nav ul ul li a{
+    color: white;
+}
+.support-menu{
+    background-color:var(--primary-color);
+    color: white; 
+    font-weight: 500; 
+}
 /* HOME PAGE HERO SECTION */
 .hero{
-    margin: 1em 0;
     height: 80vh;
     background-image: url(../img/hero_bg.jpg);
     background-position: center;
@@ -109,8 +126,9 @@ nav ul ul li{
 }
 .hero__text{
     color: white;
-    width: 400px;
+    width: 350px;
     line-height: 1.5;
+    padding: .5em 0;
 }
 
 /* WELCOME SECTION */
