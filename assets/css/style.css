@@ -188,7 +188,7 @@ a.support-menu{
 HERO SECTION 
 ========================= */
 .hero{
-    height: 80vw;
+    height: 50vw;
     background-image: url(../img/hero_bg.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-position: center;
     background-repeat: no-repeat;
