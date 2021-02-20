@@ -25,6 +25,10 @@ body{
     margin: 0 auto;
     padding: 0 1em;
 }
+.btn{
+    border:none;
+    padding: .5em 1.2em;
+}
 img{
     width: 100%;
 }
@@ -71,9 +75,13 @@ button:focus{
     flex-direction: column;
  }
  .navigation .logo{
+     padding: 0 1em;
      display: flex;
      justify-content: space-between;
      align-items: center;
+ }
+ .navigation .nav-bar{
+     padding-left:1.7em;
  }
  .toggle .fas{
      align-items: flex-end;
@@ -82,13 +90,13 @@ button:focus{
      cursor: pointer;
  }
  .nav-bar{
-     width: 100%;
+     width: 100vw;
      position:absolute;
      left: -300%;
      top: 120px;
-     margin-top: .5em;
+     margin-top: .5em 0;
      padding: 1em 0;
-     height: 80vh;
+     height: 100vh;
      background-color: #fff;
      /* background-color: wheat; */
      transform: translateX(-100%);
@@ -102,18 +110,18 @@ button:focus{
     top: 120px;
     margin-top: .5em;
     padding: 1em 0;
-    height: 80vh;
+    height: 100vh;
     /* background-color: wheat; */
     transform: translateX(0%);
     /* display: none; */
     }
  
  .nav-bar ul{
-     width: 100%;
+     width: 100vw;
  }
  .nav-bar li{
      margin: .5em 0;
-     padding: .5em;
+     padding: .5em 0;
  } .nav-bar a:hover{
      background-color: var(--primary-color);
      color: white;
@@ -175,3 +183,111 @@ a.support-menu{
     display: block;
 }
 }      
+
+/* =======================
+HERO SECTION 
+========================= */
+.hero{
+    height: 80vw;
+    background-image: url(../img/hero_bg.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    margin-bottom: 1em;
+}
+.hero .container, .hero .hero_banner{
+    height: 100%;
+}
+.hero .hero_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    padding: 0 1em;
+}
+.hero__title{
+    font-size: 1.75em;
+    color: white;
+}
+.title-span{
+    color: var(--primary-color);
+}
+.hero__text{
+    padding: .75em 0;
+    color: white;
+    line-height: 1.2;
+    margin-top: .75em;
+    font-size: 1.1em;
+}
+.hero__btn{
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    margin-top: .75em;
+}
+@media(min-width:641px){
+    .hero__title{
+        font-size: 2em;
+        color: white;
+    }
+    .title-span{
+        color: var(--primary-color);
+    }
+    .hero__text{
+        font-size: 1.3em;
+        padding: .75em 0;
+        color: white;
+        line-height: 1.2;
+        margin-top: .75em;
+    }
+    .hero__btn{
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: 500;
+        margin-top: .75em;
+    }
+}
+
+/* =======================
+WELCOME  SECTION 
+========================= */
+.welcome {
+    padding: 1em;
+}
+.welcome .welcome__grid{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.heading{
+    color: var(--secondary--color);
+    margin: .75em 0;
+}
+.welcome__content{
+    padding:1.1em 0;
+}
+.welcome__content p{
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+@media(min-width:641px){
+    .welcome .welcome__grid{
+        flex-direction: row;
+        align-items: center;
+    }
+    .welcome__text{
+    padding: .5em 1em  0 0;
+    
+    }
+   .welcome__image{
+        padding-top: .5em;
+    }
+}
+
+/* =======================
+SERVICES SECTION 
+========================= */
+.services{
+    padding: 2em 0;
+}
