@@ -23,7 +23,7 @@ body {
 }
 /* utilities */
 .container {
-  max-width: 1100px;
+  max-width: 968px;
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -239,7 +239,7 @@ HERO SECTION
     justify-content: center;
   }
   .hero__title {
-    font-size: 2em;
+    font-size: 3.2em;
     color: white;
   }
   .title-span {
