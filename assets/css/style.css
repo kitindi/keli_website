@@ -246,7 +246,7 @@ HERO SECTION
     color: var(--primary-color);
   }
   .hero__text {
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 0.75em 0;
     color: white;
     line-height: 1.2;
@@ -257,12 +257,15 @@ HERO SECTION
     color: white;
     font-weight: 500;
     margin-top: 0.75em;
+    padding: 0.85em 2em;
+    font-weight: 400;
   }
 }
 /* =======================
 WELCOME  SECTION 
 ========================= */
 .welcome {
+  margin-top: 5em;
   padding-bottom: 2em;
 }
 .welcome .welcome__grid {
@@ -271,25 +274,30 @@ WELCOME  SECTION
 }
 .heading {
   color: var(--secondary--color);
-  margin: 0.75em 0;
+  margin-bottom: 0.75em;
+  font-size: 2em;
 }
 .welcome__content {
-  padding: 1.1em 0;
+  padding: 1em 0;
 }
 .welcome__content p {
-  font-size: 1.1em;
+  font-size: 1.15em;
   line-height: 1.5;
 }
 @media (min-width: 641px) {
   .welcome .welcome__grid {
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
   }
   .welcome__text {
-    padding: 0.5em 1em 0 0;
+    padding: 0 1em 0 0;
   }
   .welcome__image {
     padding-top: 0.5em;
+  }
+  .heading {
+    font-size: 3em;
   }
 }
 /* =======================
@@ -304,6 +312,8 @@ SERVICES SECTION
   margin: 0.75em 0;
 }
 .card-secription {
+  font-size: 1.15em;
+  line-height: 1.5;
   padding: 0.75em 0;
 }
 .card-btn {
@@ -680,8 +690,73 @@ FOOTER SECTION
 .contact_intro {
   padding: 3em 0;
 }
-.contact_intro h2 {
+.contact_intro .container,
+.faqs .container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact--content {
+  width: 100%;
+  padding: 2em 1em;
+  border-left: 15px solid var(--primary-color-light);
+  border-bottom: 15px solid var(--primary-color-light);
+}
+.contact_direction {
+  border-right: 15px solid var(--primary-color-light);
+}
+.contact-title {
   color: var(--secondary--color);
-  font-size: 2.5em;
+  font-size: 3.2em;
   margin: 1.5em 0;
+}
+.contact_intro p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.form {
+  padding: 3em;
+}
+.contact-form {
+  width: 100%;
+}
+.contact-form-control {
+  margin-bottom: 1em;
+}
+.contact-form-control input,
+.contact-form-control textarea {
+  padding: 0.75em;
+  width: 100%;
+  /* border: 3px soild var(--primary-color-light); */
+}
+.contact-form-control input,
+.contact-form-control textarea {
+  border: 2px solid var(--secondary--color-light);
+}
+.contact-form-control input:focus,
+.contact-form-control textarea:focus {
+  outline: none;
+}
+.btn-submit {
+  padding: 0.8em 2.5em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.faqs {
+  padding: 3em 0;
+}
+.faqs .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5em 0;
+}
+.faqs a {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding: 0.75em 3em;
+  margin-top: 0.75em;
+  align-items: center;
 }
