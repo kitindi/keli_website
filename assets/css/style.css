@@ -726,6 +726,7 @@ FOOTER SECTION
 .contact-form-control textarea {
   padding: 0.75em;
   width: 100%;
+  font-size: 1.1em;
   /* border: 3px soild var(--primary-color-light); */
 }
 .contact-form-control input,
