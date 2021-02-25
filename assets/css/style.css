@@ -573,7 +573,7 @@ FOOTER SECTION
   justify-content: flex-end;
   align-items: flex-end;
 }
-.intro-content p {
+.nursery-text .intro-content p {
   display: none;
 }
 .info {
@@ -660,17 +660,29 @@ FOOTER SECTION
     background: var(--primary-color);
     color: white;
   }
+  .text-content h4 {
+    font-size: 1.75em;
+    line-height: 1.5;
+  }
+  .text-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
   .intro-content h2 {
     color: white;
     font-size: 1.35em;
     margin-bottom: 1em;
   }
-  .intro-content p {
+  .nursery-text .intro-content p {
     display: block;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    font-weight: 400;
   }
   .info {
     margin: 1.5em 0;
+  }
+  .nursery-program p {
+    font-size: 1.2em;
   }
   .nursery-into-content {
     display: grid;
@@ -682,6 +694,15 @@ FOOTER SECTION
     grid-template-columns: 2fr 1fr;
     align-items: center;
     gap: 4em;
+  }
+  .p-list {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--secondary--color);
+  }
+  .nursery-program ul li {
+    font-size: 1.2em;
+    padding: 0.5em 0;
   }
 }
 
@@ -784,6 +805,7 @@ ENTREPRENEURSHIP PAGE STYLES
   padding: 1em 0;
 }
 .welcome-entre .welcome-contents p {
+  font-size: 1.2em;
   color: #fff;
   font-weight: 400;
 }
@@ -822,7 +844,7 @@ ENTREPRENEURSHIP PAGE STYLES
 }
 .skill p {
   color: #f7f0f0;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-top: 0.5em;
 }
 .col-2 {
@@ -875,7 +897,7 @@ ENTREPRENEURSHIP PAGE STYLES
 
 @media (min-width: 641px) {
   .welcome-entre {
-    height: 60vh;
+    height: 65vh;
   }
   .courses-contents {
     display: grid;
@@ -903,5 +925,8 @@ ENTREPRENEURSHIP PAGE STYLES
     grid-template-columns: 2fr 1fr;
     gap: 0.75em;
     align-items: center;
+  }
+  .who-col-1 ul li {
+    font-size: 1.2em;
   }
 }
