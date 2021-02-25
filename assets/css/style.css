@@ -58,14 +58,15 @@ a {
   color: white;
 }
 .support-us {
-  padding-top: 0.5em;
+  margin-top: 1.2em;
   text-align: right;
 }
 button {
   border: none;
   background-color: var(--primary-color);
   color: white;
-  padding: 0.5em 1em;
+  padding: 0.75em 1.25em;
+  font-size: 1.25em;
   cursor: pointer;
 }
 button:focus {
@@ -128,11 +129,11 @@ header {
   padding: 0.5em 0;
 }
 .nav-bar a:hover {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   color: white;
 }
 .nav-bar ul li a {
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: 500;
   color: var(--secondary--color);
 }
@@ -143,8 +144,8 @@ header {
   display: none;
 }
 .sub-menu li:hover {
-  background: var(--primary-color);
-  color: white;
+  /* background: var(--primary-color);
+  color: white; */
 }
 .sub-menu-toggle {
   display: block;
@@ -228,8 +229,10 @@ HERO SECTION
 .hero__btn {
   background-color: var(--primary-color);
   color: white;
+  font-size: 1.3em;
   font-weight: 500;
   margin-top: 0.75em;
+  padding: 0.75em 1.2em;
 }
 @media (min-width: 641px) {
   .hero .hero_banner {
@@ -255,10 +258,10 @@ HERO SECTION
   .hero__btn {
     background-color: var(--primary-color);
     color: white;
+    font-size: 1.3em;
     font-weight: 500;
     margin-top: 0.75em;
-    padding: 0.85em 2em;
-    font-weight: 400;
+    padding: 0.75em 1.2em;
   }
 }
 /* =======================
@@ -769,25 +772,26 @@ ENTREPRENEURSHIP PAGE STYLES
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.*/
 
 .welcome-entre {
-  height: 52vh;
+  height: 53vh;
 }
 .welcome-entre .container {
   height: 100%;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: var(--secondary--color-light);
 }
 .welcome-entre .welcome-contents {
   height: 100%;
   padding: 1em 0;
 }
 .welcome-entre .welcome-contents p {
-  color: #f7f0f0;
+  color: #fff;
   font-weight: 400;
 }
 .welcome-entre .welcome-contents h2 {
-  color: #f7f0f0;
+  color: #fff;
   font-size: 3em;
   line-height: 1.2;
-  margin-top: 1.75em;
+  margin-top: 2.5em;
   text-transform: capitalize;
 }
 .courses {
@@ -870,6 +874,9 @@ ENTREPRENEURSHIP PAGE STYLES
 }
 
 @media (min-width: 641px) {
+  .welcome-entre {
+    height: 60vh;
+  }
   .courses-contents {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -879,9 +886,17 @@ ENTREPRENEURSHIP PAGE STYLES
     grid-template-columns: 1fr 2fr;
     gap: 0.75em;
   }
+  .welcome-entre .welcome-contents h2 {
+    color: #fff;
+    font-size: 3em;
+    line-height: 1.2;
+    margin-top: 4em;
+    text-transform: capitalize;
+  }
   .skill {
     width: 120px;
     height: 120px;
+    text-align: center;
   }
   .who-contents {
     display: grid;
