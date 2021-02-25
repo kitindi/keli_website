@@ -469,13 +469,13 @@ FOOTER SECTION
 ========================= */
 .footer {
   background-color: var(--secondary--color-dark);
-  color: white;
+  color: rgb(238, 231, 231);
   padding-top: 3.5em;
   padding-bottom: 1em;
 }
 .footer-heading {
-  color: white;
-  font-weight: 400;
+  color: rgb(243, 234, 234);
+  font-weight: 500;
 }
 .link a.social-link {
   color: white;
